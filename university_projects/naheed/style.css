@@ -1,0 +1,789 @@
+/* <----------------Start of Naeem----------------> */
+
+body {
+    margin: 0;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    background-color: #f5f5f5;
+}
+
+h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 12px 12px 12px 0;
+    white-space: nowrap;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.text-container {
+    padding-left: 4px;
+    font-size: 13.5px;
+    font-weight: bolder;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    background-color: #445268;
+    position: sticky;
+    width: 100%;
+    height: 51px;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    max-width: 1390px;
+    width: 100%;
+    margin: 0 20px;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 100%;
+    max-width: 172px;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    width: 13%;
+    max-width: 156px;
+    justify-content: center;
+    padding: 5px 15px;
+    background-color: #f2c557;
+}
+
+.depart-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+}
+
+.dropdown-cnt {
+    display: flex;
+    flex-direction: column;
+    top: 51px;
+    position: fixed;
+    background: white;
+    width: 225px;
+    margin-left: 41px;
+    border: 2.5px solid #f2c557;
+    min-width: 160px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: height 0.2s linear;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/* .dropdown-cnt a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-cnt a {
+    padding: 12px 16px;
+    text-decoration: none;
+} */
+
+.dropdown-cnt ul {
+    margin: 0;
+}
+
+.dropdown-cnt li a:hover {
+    color: #e47911;
+}
+
+.dropdown-cnt li {
+    margin: 0 18px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.dropdown-cnt li i {
+    font-size: 9px;
+}
+
+.dropdown-cnt li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #555555;
+    text-decoration: none;
+}
+
+#menu:hover .dropdown-cnt {
+    height: 414px;
+    opacity: 1;
+}
+
+#header-right {
+    display: flex;
+    color: white;
+    width: 65%;
+}
+
+#searchbar-container {
+    display: flex;
+    background-color: white;
+    margin: auto 0;
+    height: 41px;
+    max-width: 555px;
+    width: 65%;
+    border-radius: 40px;
+}
+
+#searchbar {
+    width: 95%;
+    border: 0;
+    border-radius: 20px;
+    padding: 0 15px;
+}
+
+#searchbar:focus {
+    outline: 0;
+}
+
+#search-icon {
+    display: flex;
+    width: 65px;
+    height: 30px;
+    margin: auto;
+    color: black;
+    align-items: center;
+}
+
+#search-icon hr {
+    height: 100%;
+    border-color: #ffffff;
+    margin: 0 20px 0px 0;
+}
+
+.fa {
+    font-size: 25px;
+    color: white;
+}
+
+#search-icon .fas {
+    font-size: 15px;
+}
+
+#menu-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#icons-container {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+#bars {
+    width: 20px;
+    vertical-align: middle;
+}
+
+#bars hr {
+    border: 1px solid black;
+    margin: 4px 0;
+}
+
+#menu-text {
+    font-weight: bolder;
+    padding-left: 9px;
+}
+
+.fa-sort-down {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.fa-shopping-basket {
+    font-size: 30px;
+}
+
+.subtext2 {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+#bottom-header {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px #c1bfbf;
+    height: 40px;
+}
+
+#btmheader-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1390px;
+    margin: 0 20px;
+    width: 100%;
+}
+
+#btmheader-container a,
+#btmheader-container div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 7px;
+}
+
+#btmheader-container a:hover {
+    color: #e47911;
+}
+
+#btmheader-container a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.fa-phone-alt {
+    font-size: 11px;
+    height: fit-content;
+}
+
+
+/* <----------------End of Naeem----------------> */
+
+
+/* <----------------Start of Atif----------------> */
+
+#upper-body {
+    max-width: 1390px;
+    margin: auto;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.img a {
+    margin: 5px;
+    /* box-shadow: 0 1px 3px rgba(57, 73, 76, .35); */
+    padding-bottom: 3px;
+    background-color: #d7d7d7;
+}
+
+.img a:hover {
+    background-color: #e9bd54;
+    /* the underline shouldn't show, but it does */
+}
+
+#banner img {
+    margin: 5px;
+    width: 32.6%;
+    box-shadow: 0 1px 3px rgba(57, 73, 76, .35);
+}
+
+.cat-label-container a:hover {
+    background-color: #dddddd;
+}
+
+.cat-label-container a {
+    font-size: 13px;
+    position: absolute;
+    background: #f5f5f5;
+    text-decoration: none;
+    color: black;
+    padding: 6px 12px;
+    right: 0;
+}
+
+.cat-label-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#banner {
+    display: flex;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.cat-label-container hr {
+    width: 100%;
+    margin: 0;
+    height: 3px;
+    background-color: #dddddd;
+    border: 0;
+}
+
+#main-banner-container img {
+    width: 100%;
+}
+
+#main-banner-container {
+    position: relative;
+    box-shadow: 0 1px 3px rgba(57, 73, 76, .35);
+}
+
+.img-navbtn {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    color: #727272;
+    background-color: white;
+    font-size: 20px;
+    top: 50%;
+    transition: all .4s ease-in-out 0s;
+}
+
+.img-navbtn:hover {
+    color: white;
+    background-color: #445268;
+}
+
+#main-banner-container .img-navbtn {
+    width: 40px;
+    height: 64px;
+    transform: translate(0, -50%);
+}
+
+#cat-img-container .right {
+    right: 0;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 3px 0 3px 0 rgba(50, 50, 50, .2);
+    transform: translate(40%, -50%);
+}
+
+#cat-img-container .left {
+    transform: translate(-40%, -50%);
+    box-shadow: -3px 0 3px 0 rgba(50, 50, 50, .2);
+    border-radius: 4px 0 0 4px;
+}
+
+#cat-img-container {
+    position: relative;
+}
+
+#cat-img-container .img-navbtn {
+    width: 37px;
+    height: 49px;
+    opacity: 0;
+}
+
+#cat-img-container:hover .img-navbtn {
+    opacity: 1;
+}
+
+#main-banner-container .right {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+#main-banner-container .left {
+    border-radius: 0 5px 5px 0;
+}
+
+
+/* <----------------End of Atif----------------> */
+
+
+/* <----------------Start of Abdul Hadi----------------> */
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.upper-footer .main-items li {
+    margin: 0;
+}
+
+.upper-footer .main-items .feature-icon p.no-margin {
+    margin-bottom: 25px
+}
+
+.upper-footer .main-items .feature-icon p {
+    overflow: hidden;
+}
+
+footer .fa,
+.far {
+    color: #999999;
+    float: left;
+    width: 25px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.after-icons {
+    display: flex;
+    font-size: 14px;
+    line-height: 22px;
+    color: #999999;
+}
+
+footer {
+    background-color: #222222;
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    line-height: 35px;
+    color: #666666;
+}
+
+.main-items {
+    padding: 25px 0 10px;
+}
+
+.upper-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer a:hover {
+    color: rgb(233, 97, 48);
+}
+
+.title {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 0 0 20px;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.connection {
+    color: #ffffff;
+    font-size: 18px;
+    padding-right: 60px;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.list {
+    margin: 10px 0 0;
+}
+
+.social-media {
+    font-size: 18px;
+    padding: 0 0 20px;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.column {
+    float: left;
+    margin-right: 10px;
+}
+
+.newsletter-box {
+    display: flex;
+}
+
+.newsletter-box input.input-email {
+    color: #999999;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    display: block;
+    height: 45px;
+    margin: 0;
+    max-width: 300px;
+    border-width: 1px;
+    border-radius: 3px;
+    border-style: solid;
+    padding: 0 0px 0 24px;
+    font-size: 14px;
+}
+
+.newsletter-box button.sub-button {
+    color: #222222;
+    background-color: #f2c557;
+    border-color: #be952c;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 0 3px 3px 0;
+    width: 110px
+}
+
+.sub-msg {
+    color: #dddddd;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.title-sub {
+    position: relative;
+    margin: 0;
+    display: block;
+    border: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.naheed-logo {
+    margin-top: 15px;
+    text-align: right;
+    padding: 0;
+}
+
+.lower-footer {
+    border-top: 1px solid #323232;
+}
+
+.copyright {
+    padding: 30px 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 35px;
+    color: #999999;
+}
+
+.payments {
+    float: right;
+}
+
+#footer-container {
+    max-width: 1360px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* <----------------End of Abdul Hadi----------------> */
+
+/* <----------------Start of Danish----------------> */
+
+.policies-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 1390px;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    height: 99px;
+}
+
+.policies {
+    background-color: #ffffff;
+    margin-top: 30px;
+}
+
+.policy-info .title {
+    color: black;
+    padding: 0;
+    font-size: 16px;
+}
+
+.policy-icon {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+.policy {
+    display: flex;
+    flex-direction: row;
+}
+
+/* <----------------End of Danish----------------> */
+
+/* <----------------Start of Saad and Abdul Hadi----------------> */
+
+.products {
+    margin: auto;
+    width: 100%;
+    max-width: 1390px;
+}
+
+.product-container {
+    padding: 10px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    max-width: 1390px;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(57, 73, 76, .35);
+}
+
+.product-cat {
+    position: relative;
+}
+
+.product-navbtn {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    color: #727272;
+    background-color: white;
+    font-size: 20px;
+    top: 50%;
+    z-index: 2;
+    transition: all .4s ease-in-out 0s;
+}
+
+.product-cat .right {
+    right: 0;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 3px 0 3px 0 rgba(50, 50, 50, .2);
+    transform: translate(40%, -50%);
+}
+
+.product-cat .left {
+    transform: translate(-40%, -50%);
+    box-shadow: -3px 0 3px 0 rgba(50, 50, 50, .2);
+    border-radius: 4px 0 0 4px;
+}
+
+.product-navbtn {
+    width: 37px;
+    height: 49px;
+    opacity: 0;
+}
+
+.product-cat:hover .product-navbtn {
+    opacity: 1 !important;
+}
+
+.product-navbtn:hover {
+    color: white;
+    background-color: #445268;
+}
+
+.product-wishlist-btn:hover .fa-heart {
+    color: #000000;
+}
+
+.product-wishlist-btn:hover {
+    background-color: #f2c557;
+    border-color: #be952c;
+    border-style: solid;
+}
+
+.product:hover {
+    border: 2px solid #f8d685;
+}
+
+.product {
+    position: relative;
+    width: 197px;
+    height: 275px;
+    font-size: 13px;
+    border: 2px solid transparent;
+}
+
+.product-image {
+    width: 193px;
+    height: 193px;
+}
+
+.product-price {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+.old-price {
+    padding-left: 5px;
+    text-decoration: line-through;
+    color: #888888;
+    font-size: 12px;
+}
+
+.product-desc a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2557aa;
+}
+
+.product-desc {
+    font-weight: bold;
+    padding: 18px 8px 0 8px;
+}
+
+.product-btns {
+    display: flex;
+    position: absolute;
+    top: 60%;
+    width: 37px;
+    height: 37px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    opacity: 0;
+    transition: 0.2s linear;
+}
+
+.product .fa-heart {
+    font-size: 15px;
+    color: #666666;
+}
+
+.product .fa-shopping-basket {
+    font-size: 15px;
+    color: #000000;
+}
+
+.product-wishlist-btn {
+    left: 30%;
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+}
+
+.product:hover .product-btns {
+    opacity: 1;
+}
+
+.product-cart-btn {
+    left: 5%;
+    background-color: #f2c557;
+    border: 1px solid #be952c;
+}
+
+.product-container hr {
+    margin: 0;
+    height: 179px;
+    top: 30px;
+    border: 1px solid #e6e6e6;
+    position: relative;
+}
+
+
+/* <----------------End of Saad and Abdul Hadi----------------> */

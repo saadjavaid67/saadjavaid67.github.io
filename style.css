@@ -109,3 +109,28 @@ html {
 #top-btn-container {
     text-decoration: none;
 }
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 1px 1px 13px 0px silver;
+    margin: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.cardsContainer .card {
+    max-width: 300px;
+}
+
+.card h2 {
+    text-align: center;
+    font-family: cursive;
+}
