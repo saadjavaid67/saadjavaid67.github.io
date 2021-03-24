@@ -134,6 +134,7 @@ html {
     max-width: 300px;
     padding: 30px;
     transition: 0.6s transform cubic-bezier(0.81, -0.07, 0.29, 0.92);
+    border: 1px solid black;
 }
 
 .cardsContainer .card:hover {
