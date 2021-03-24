@@ -93,6 +93,10 @@ html {
     margin: 0 10px;
 }
 
+#profiles-icons a:hover {
+    color: #007bff;
+}
+
 #profiles-icons {
     text-align: center;
 }
