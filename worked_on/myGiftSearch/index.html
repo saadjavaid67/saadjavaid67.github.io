@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>Gift Search | Awesome gifts. Countless gift ideas. </title>
+    <link rel="icon" href="images/icons/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" media="(min-width:870px)">
+    <link rel='stylesheet' href='mobile.css' media='screen and (max-width: 869px)'>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="col-xs-2">
+                    <a href="/">
+                        <img src="images/giftsearch-logo.svg" alt="Gift Search" class="logo">
+                    </a>
+                    <div class="menu-close">
+                        <a href="#">
+                            <img src="images/menu-close.svg" alt="Close menu">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-10">
+
+                    <div class="row menu">
+                        <div class="col-xs-12 menu-top">
+                            <div class="pull-right">
+                                <ul>
+                                    <li>
+                                        <a href="/login" class="btn btn-blank btn-orange-text">Log In</a>
+                                    </li>
+                                    <li>
+                                        <a href="/register" class="btn btn-orange">Register</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 menu-bottom">
+                            <ul>
+                                <li class="active">
+                                    <a href="/" class="btn btn-blank">Home</a>
+                                </li>
+                                <li class="">
+                                    <a href="/new" class="btn btn-blank">Latest picks</a>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="#" class="btn btn-blank">Gifts by Occasion</a>
+                                    <div class="dropdown">
+                                        <div class="item-group">
+                                            <div class="item">
+                                                <a href="/occasion/halloween-gifts">
+                                                    <span class="icon">
+                                                        <img src="images/icons/ff4237dd23c8b4e7a42c207502084e08.svg"
+                                                            alt="Halloween">
+                                                    </span>
+                                                    <span class="name">
+                                                        Halloween
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="/occasion/christmas-gifts">
+                                                    <span class="icon">
+                                                        <img src="images/icons/a053e2979a0bd78d9150a7191375badc.svg"
+                                                            alt="Christmas">
+                                                    </span>
+                                                    <span class="name">
+                                                        Christmas
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="/occasion/birthday-gifts">
+                                                    <span class="icon">
+                                                        <img src="images/icons/bab4f84d334ab433c133fe6ddbe2b734.svg"
+                                                            alt="Birthday">
+                                                    </span>
+                                                    <span class="name">
+                                                        Birthday
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="/occasion/valentines-day-gifts">
+                                                    <span class="icon">
+                                                        <img src="images/icons/47299ff9e6f8bab965b82e8ef862e4ec.svg"
+                                                            alt="Valentine's Day">
+                                                    </span>
+                                                    <span class="name">
+                                                        Valentine's Day
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="/occasion/mothers-day-gifts">
+                                                    <span class="icon">
+                                                        <img src="images/icons/3561770eb809706386bb1b7b6434a517.svg"
+                                                            alt="Mother's Day">
+                                                    </span>
+                                                    <span class="name">
+                                                        Mother's Day
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="/occasion/fathers-day-gifts">
+                                                    <span class="icon">
+                                                        <img src="images/icons/ce6a17534ebd2ef300c5ea33ec909237.svg"
+                                                            alt="Father's Day">
+                                                    </span>
+                                                    <span class="name">
+                                                        Father's Day
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="/occasion/wedding-gifts">
+                                                    <span class="icon">
+                                                        <img src="images/icons/7e21e7b093f4cb2965cf549b8ce3f491.svg"
+                                                            alt="Wedding">
+                                                    </span>
+                                                    <span class="name">
+                                                        Wedding
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="/occasion/just-because-gifts">
+                                                    <span class="icon">
+                                                        <img src="images/icons/3407f4e5e8a180da273d94fc99e2fff7.svg"
+                                                            alt="Just Because">
+                                                    </span>
+                                                    <span class="name">
+                                                        Just Because
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="#" class="btn btn-blank">Types of Gifts</a>
+                                    <div class="dropdown">
+                                        <div class="item-group">
+                                            <div class="item">
+                                                <a href="/type/geek-gear">
+                                                    <span class="icon">
+                                                        <img src="images/icons/0875c95894ab2dbe2c8327b491e7b771.svg"
+                                                            alt="Geek Gear">
+                                                    </span>
+                                                    <span class="name">
+                                                        Geek Gear
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="/type/cooking-goodies">
+                                                    <span class="icon">
+                                                        <img src="images/icons/becceb0f9eab3f4e1eaad907e452454a.svg"
+                                                            alt="Cooking Goodies">
+                                                    </span>
+                                                    <span class="name">
+                                                        Cooking Goodies
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="/type/movies-and-tv-shows">
+                                                    <span class="icon">
+                                                        <img src="images/icons/4cd545089cf9b466989b29334214acb9.svg"
+                                                            alt="Movies &amp; TV Shows">
+                                                    </span>
+                                                    <span class="name">
+                                                        Movies &amp; TV Shows
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="/type/reading">
+                                                    <span class="icon">
+                                                        <img src="images/icons/b5472871a376f7bfacd0933e27f6afaf.svg"
+                                                            alt="Reading">
+                                                    </span>
+                                                    <span class="name">
+                                                        Reading
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="/type/office-jungle">
+                                                    <span class="icon">
+                                                        <img src="images/icons/b2bfd04fdb61c59c5b876f9a6ab2247c.svg"
+                                                            alt="Office Jungle">
+                                                    </span>
+                                                    <span class="name">
+                                                        Office Jungle
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="/type/decoration">
+                                                    <span class="icon">
+                                                        <img src="images/icons/2fe65a8a419686b7292154930abbbcf0.svg"
+                                                            alt="Home Decor">
+                                                    </span>
+                                                    <span class="name">
+                                                        Home Decor
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="item-group">
+                                            <div class="item">
+                                                <a href="/type/hobby">
+                                                    <span class="icon">
+                                                        <img src="images/icons/70dff96612c71775d596bba0e46430f5.svg"
+                                                            alt="Hobby">
+                                                    </span>
+                                                    <span class="name">
+                                                        Hobby
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="/type/apparel">
+                                                    <span class="icon">
+                                                        <img src="images/icons/4c784f094432a36be6b5e45c4992d702.svg"
+                                                            alt="Apparel">
+                                                    </span>
+                                                    <span class="name">
+                                                        Apparel
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="/type/indoor-games">
+                                                    <span class="icon">
+                                                        <img src="images/icons/c9fab260331add3a2441196ea739eb3e.svg"
+                                                            alt="Indoor Games">
+                                                    </span>
+                                                    <span class="name">
+                                                        Indoor Games
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="/type/other-cool-gifts">
+                                                    <span class="icon">
+                                                        <img src="images/icons/9305ba6e92b5023b0986bc4f5b326959.svg"
+                                                            alt="Other Cool Gifts">
+                                                    </span>
+                                                    <span class="name">
+                                                        Other Cool Gifts
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="/type/sports-and-outdoor">
+                                                    <span class="icon">
+                                                        <img src="images/icons/b229f3f505d297b5bd8b94e7f01b270c.svg"
+                                                            alt="Sports &amp; Outdoor">
+                                                    </span>
+                                                    <span class="name">
+                                                        Sports &amp; Outdoor
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <a href="/blog" class="btn btn-blank">Blog</a>
+                                </li>
+                                <li class="">
+                                    <a href="/contact" class="btn btn-blank">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-md-offset-8 col-sm-6 col-sm-offset-6 col-xs-12 product-search">
+                            <div class="form-group">
+                                <form method="post" action="/search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="term" placeholder="Search...">
+                                        <span class="input-group-btn">
+                                            <button type="submit" class="btn btn-default">
+                                                <span class="glyphicon glyphicon-search"></span>
+                                        </button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hamburger-menu">
+                        <a href="#">
+                            <img src="images/menu.svg" alt="Menu">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="content">
+
+            <section class="search-form">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1>
+                            <span class="regular">Who do you want to</span><br>
+                            <span class="cursive">make happy?</span>
+                        </h1>
+                        <form method="post" action="/search">
+                            <div id="homepage-search-form">
+                                <div data-reactroot="">
+                                    <div class="row">
+                                        <div class="col-sm-9 form-fields">
+                                            <div class="form-row"><span>I want to get a gift for</span><select name="gender">
+                                                    <option value="1">A Male</option>
+                                                    <option value="2">A Female</option>
+                                                    <option value="0">Doesn't matter</option>
+                                                </select><br><span>who is my</span><select name="relationship">
+                                                    <option value="1">Partner</option>
+                                                    <option value="2">Family Member</option>
+                                                    <option value="3">Friend</option>
+                                                    <option value="4">Co-Worker</option>
+                                                    <option value="5">Acquaintance</option>
+                                                </select></div>
+                                            <div class="form-row"><span>They are</span><select name="age">
+                                                    <option value="1">A Child</option>
+                                                    <option value="2">A Teenager</option>
+                                                    <option value="3">An Adult</option>
+                                                </select><br><span>and my budget is</span><select name="budget">
+                                                    <option value="20">Under $20</option>
+                                                    <option value="50">Under $50</option>
+                                                    <option value="100">Under $100</option>
+                                                    <option value="0">Infinite</option>
+                                                </select></div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="avatar" style="display: block;">
+                                                <div class="background" style="display: block; background-image: url(./images/avatar/background-adult.svg);">
+                                                </div>
+                                                <div class="person"></div>
+                                                <div class="custom" style="display: block; background-image: url(./images/avatar/male-adult.svg);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 button-row"><button class="btn btn-orange" type="submit">What to
+                                                Get?</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="section-title">Latest Picks</div>
+                <div class="row search-results">
+                    <div class="col-md-3 col-sm-4 col-xs-6 result">
+                        <div class="image">
+                            <a href="/gift/sloth-loves-cat-t-shirt">
+                                <img src="images/product/sloth-loves-cat-t-shirt.jpg" alt="Sloth Loves Cat T-Shirt">
+                            </a>
+                        </div>
+                        <div class="name">
+                            <h3>
+                                <a href="/gift/sloth-loves-cat-t-shirt">
+                                    Sloth Loves Cat T-Shirt
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="description">
+                            <p>
+                                Of course two of the cutest animals on the planet must like each other and you can show their love with this adorable T-shirt!
+                                <small><a href="/gift/sloth-loves-cat-t-shirt">Read more »</a></small>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <div class="price">
+                                $17.95
+                            </div>
+                            <div class="check-out">
+                                <a href="https://www.amazon.com/dp/B01MG3J9O7?tag=gifsea0f-20" target="_blank" class="btn btn-orange">
+                                    Check it out
+                                </a>
+                            </div>
+                        </div>
+                        <div class="favorite-wrapper">
+                            <div class="favorite " data-id="634">
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 result">
+                        <div class="image">
+                            <a href="/gift/men-s-traveler-dopkit">
+                                <img src="images/product/men-s-traveler-dopkit.jpg" alt="Men's Traveler Dopp Kit">
+                            </a>
+                        </div>
+                        <div class="name">
+                            <h3>
+                                <a href="/gift/men-s-traveler-dopkit">
+                                    Men's Traveler Dopp Kit
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="description">
+                            <p>
+                                A compact high quality toiletry bag with handles and pockets, ready to be packed and thrown in the bag as you prepare to go on an adventure.
+                                <small><a href="/gift/men-s-traveler-dopkit">Read more »</a></small>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <div class="price">
+                                $27.25
+                            </div>
+                            <div class="check-out">
+                                <a href="https://www.amazon.com/dp/B00F1TI8T0?tag=gifsea0f-20" target="_blank" class="btn btn-orange">
+                                    Check it out
+                                </a>
+                            </div>
+                        </div>
+                        <div class="favorite-wrapper">
+                            <div class="favorite " data-id="633">
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 result">
+                        <div class="image">
+                            <a href="/gift/narwhal-usb-foot-warmers">
+                                <img src="images/product/narwhal-usb-foot-warmers.jpg" alt="Narwhal USB Foot Warmers">
+                            </a>
+                        </div>
+                        <div class="name">
+                            <h3>
+                                <a href="/gift/narwhal-usb-foot-warmers">
+                                    Narwhal USB Foot Warmers
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="description">
+                            <p>
+                                The unicorn of the sea, the narwhal probably can't keep a human away from hypothermia, but these narwhal slippers *will* keep your feet warm and toasty.
+                                <small><a href="/gift/narwhal-usb-foot-warmers">Read more »</a></small>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <div class="price">
+                                $42.99
+                            </div>
+                            <div class="check-out">
+                                <a href="https://www.amazon.com/dp/B00PB6CKV0?tag=gifsea0f-20" target="_blank" class="btn btn-orange">
+                                    Check it out
+                                </a>
+                            </div>
+                        </div>
+                        <div class="favorite-wrapper">
+                            <div class="favorite " data-id="632">
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 result">
+                        <div class="image">
+                            <a href="/gift/predator-quadcopter-drone">
+                                <img src="images/product/predator-quadcopter-drone.jpg" alt="Predator Quadcopter Drone">
+                            </a>
+                        </div>
+                        <div class="name">
+                            <h3>
+                                <a href="/gift/predator-quadcopter-drone">
+                                    Predator Quadcopter Drone
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="description">
+                            <p>
+                                A tiny yet powerful and durable drone with bright lights and excellent response to controls, this Predator quadcopter drone will be a lot of fun!
+                                <small><a href="/gift/predator-quadcopter-drone">Read more »</a></small>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <div class="price">
+                                $39.99
+                            </div>
+                            <div class="check-out">
+                                <a href="https://www.amazon.com/dp/B0157IHJMQ?tag=gifsea0f-20" target="_blank" class="btn btn-orange">
+                                    Check it out
+                                </a>
+                            </div>
+                        </div>
+                        <div class="favorite-wrapper">
+                            <div class="favorite " data-id="631">
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 result">
+                        <div class="image">
+                            <a href="/gift/smart-led-light-bulb-smartphone-controlled">
+                                <img src="images/product/smart-led-light-bulb-smartphone-controlled.jpg" alt="Smart LED Light Bulb - Smartphone Controlled">
+                            </a>
+                        </div>
+                        <div class="name">
+                            <h3>
+                                <a href="/gift/smart-led-light-bulb-smartphone-controlled">
+                                    Smart LED Light Bulb - Smartphone Controlled
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="description">
+                            <p>
+                                The best colorful lights are ones that you can change and control at will and from a distance! You can change the color of this Smart LED light bulb from your s
+                                <small><a href="/gift/smart-led-light-bulb-smartphone-controlled">Read more
+                                        »</a></small>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <div class="price">
+                                $30.95
+                            </div>
+                            <div class="check-out">
+                                <a href="https://www.amazon.com/dp/B00P6WAEHQ?tag=gifsea0f-20" target="_blank" class="btn btn-orange">
+                                    Check it out
+                                </a>
+                            </div>
+                        </div>
+                        <div class="favorite-wrapper">
+                            <div class="favorite " data-id="630">
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 result">
+                        <div class="image">
+                            <a href="/gift/cobblestone-pathway-glossy-mural-36x80in">
+                                <img src="images/product/cobblestone-pathway-glossy-mural-36x80in.jpg" alt="Cobblestone Pathway Glossy Mural 36x80in">
+                            </a>
+                        </div>
+                        <div class="name">
+                            <h3>
+                                <a href="/gift/cobblestone-pathway-glossy-mural-36x80in">
+                                    Cobblestone Pathway Glossy Mural 36x80in
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="description">
+                            <p>
+                                A gorgeous mural for a wall or a door that shows an Edinburgh cobblestone pathway, perfect to make you think of going on adventures!
+                                <small><a href="/gift/cobblestone-pathway-glossy-mural-36x80in">Read more »</a></small>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <div class="price">
+                                $39.95
+                            </div>
+                            <div class="check-out">
+                                <a href="https://www.amazon.com/dp/B010MSHOZ8/?tag=gifsea0f-20" target="_blank" class="btn btn-orange">
+                                    Check it out
+                                </a>
+                            </div>
+                        </div>
+                        <div class="favorite-wrapper">
+                            <div class="favorite " data-id="629">
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 result">
+                        <div class="image">
+                            <a href="/gift/star-wars-han-solo-in-carbonite-wall-decal">
+                                <img src="images/product/star-wars-han-solo-in-carbonite-wall-decal.jpg" alt="Star Wars Han Solo In Carbonite Wall Decal">
+                            </a>
+                        </div>
+                        <div class="name">
+                            <h3>
+                                <a href="/gift/star-wars-han-solo-in-carbonite-wall-decal">
+                                    Star Wars Han Solo In Carbonite Wall Decal
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="description">
+                            <p>
+                                Forever immortalized in carbonite (at least in the image), Han Solo from Star Wars will look cold and dashing on your wall thanks to this decal.
+                                <small><a href="/gift/star-wars-han-solo-in-carbonite-wall-decal">Read more
+                                        »</a></small>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <div class="price">
+                                $69.41
+                            </div>
+                            <div class="check-out">
+                                <a href="https://www.amazon.com/dp/B00NRLYRLW?tag=gifsea0f-20" target="_blank" class="btn btn-orange">
+                                    Check it out
+                                </a>
+                            </div>
+                        </div>
+                        <div class="favorite-wrapper">
+                            <div class="favorite " data-id="628">
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 result">
+                        <div class="image">
+                            <a href="/gift/emoji-poop-shaped-pillow">
+                                <img src="images/product/emoji-poop-shaped-pillow.jpg" alt=" Emoji Poop Shaped Pillow">
+                            </a>
+                        </div>
+                        <div class="name">
+                            <h3>
+                                <a href="/gift/emoji-poop-shaped-pillow">
+                                    Emoji Poop Shaped Pillow
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="description">
+                            <p>
+                                One of the funniest gag gifts out there, this poop-shaped pillow makes for a funny gift - and a soft companion for a movie night.
+                                <small><a href="/gift/emoji-poop-shaped-pillow">Read more »</a></small>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <div class="price">
+                                $4.99
+                            </div>
+                            <div class="check-out">
+                                <a href="https://www.amazon.com/dp/B00RVDBI64?tag=gifsea0f-20" target="_blank" class="btn btn-orange">
+                                    Check it out
+                                </a>
+                            </div>
+                        </div>
+                        <div class="favorite-wrapper">
+                            <div class="favorite " data-id="627">
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 result">
+                        <div class="image">
+                            <a href="/gift/galaxy-case-for-macbook-1">
+                                <img src="images/product/galaxy-case-for-macbook-1.jpg" alt="Galaxy Case for MacBook">
+                            </a>
+                        </div>
+                        <div class="name">
+                            <h3>
+                                <a href="/gift/galaxy-case-for-macbook-1">
+                                    Galaxy Case for MacBook
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="description">
+                            <p>
+                                A practical case with a gorgeous galaxy design, created especially for MacBooks, that protects the screen from bumps and scratches while looking gorgeous.
+                                <small><a href="/gift/galaxy-case-for-macbook-1">Read more »</a></small>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <div class="price">
+                                $39.99
+                            </div>
+                            <div class="check-out">
+                                <a href="https://www.amazon.com/dp/B01LYJ8OFO?tag=gifsea0f-20" target="_blank" class="btn btn-orange">
+                                    Check it out
+                                </a>
+                            </div>
+                        </div>
+                        <div class="favorite-wrapper">
+                            <div class="favorite " data-id="626">
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 result">
+                        <div class="image">
+                            <a href="/gift/boogie-board-8-5-inch-lcd-writing-tablet">
+                                <img src="images/product/boogie-board-8-5-inch-lcd-writing-tablet.jpg" alt="Boogie Board 8.5 Inch LCD Writing Tablet">
+                            </a>
+                        </div>
+                        <div class="name">
+                            <h3>
+                                <a href="/gift/boogie-board-8-5-inch-lcd-writing-tablet">
+                                    Boogie Board 8.5 Inch LCD Writing Tablet
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="description">
+                            <p>
+                                Pretty much a paperless notebook or a more practical and small blackboard that doesn't get chalk all over you, this writing tablet is great for temporary notes.
+                                <small><a href="/gift/boogie-board-8-5-inch-lcd-writing-tablet">Read more »</a></small>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <div class="price">
+                                $21.41
+                            </div>
+                            <div class="check-out">
+                                <a href="https://www.amazon.com/dp/B00AFPR68E?tag=gifsea0f-20" target="_blank" class="btn btn-orange">
+                                    Check it out
+                                </a>
+                            </div>
+                        </div>
+                        <div class="favorite-wrapper">
+                            <div class="favorite " data-id="624">
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 result">
+                        <div class="image">
+                            <a href="/gift/ninjabread-men-cookie-cutters-set-of-3">
+                                <img src="images/product/ninjabread-men-cookie-cutters-set-of-3.jpg" alt="Ninjabread Men Cookie Cutters (Set of 3)">
+                            </a>
+                        </div>
+                        <div class="name">
+                            <h3>
+                                <a href="/gift/ninjabread-men-cookie-cutters-set-of-3">
+                                    Ninjabread Men Cookie Cutters (Set of 3)
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="description">
+                            <p>
+                                Hey hey, stop fighting in the pan, there's enough space for all of you! Ouf, these ninja gingerbread men are restless, next time we're using sloth shapes.
+                                <small><a href="/gift/ninjabread-men-cookie-cutters-set-of-3">Read more »</a></small>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <div class="price">
+                                $12.49
+                            </div>
+                            <div class="check-out">
+                                <a href="https://www.amazon.com/dp/B003YUBQHO?tag=gifsea0f-20" target="_blank" class="btn btn-orange">
+                                    Check it out
+                                </a>
+                            </div>
+                        </div>
+                        <div class="favorite-wrapper">
+                            <div class="favorite " data-id="623">
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 result">
+                        <div class="image">
+                            <a href="/gift/happy-cat-pillowcase-18x18in">
+                                <img src="images/product/happy-cat-pillowcase-18x18in.jpg" alt="Happy Cat Pillowcase 18x18in">
+                            </a>
+                        </div>
+                        <div class="name">
+                            <h3>
+                                <a href="/gift/happy-cat-pillowcase-18x18in">
+                                    Happy Cat Pillowcase 18x18in
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="description">
+                            <p>
+                                Printed with the most content kitty face you'll ever see, this pillowcase (probably being petted out of shot) would lend you some of his happiness when wrappin
+                                <small><a href="/gift/happy-cat-pillowcase-18x18in">Read more »</a></small>
+                            </p>
+                        </div>
+                        <div class="more-info">
+                            <div class="price">
+                                $7.99
+                            </div>
+                            <div class="check-out">
+                                <a href="https://www.amazon.com/dp/B014GRKCMI?tag=gifsea0f-20" target="_blank" class="btn btn-orange">
+                                    Check it out
+                                </a>
+                            </div>
+                        </div>
+                        <div class="favorite-wrapper">
+                            <div class="favorite " data-id="622">
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row see-more">
+                    <div class="col-xs-12">
+                        <p class="end-link">
+                            <a href="/new">See latest gifts</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="row">
+                    <div class="col-xs-3 type-wrapper">
+                        <div class="type geek-gear">
+                            <div class="icon"></div>
+                            <div class="name">
+                                <a href="/type/geek-gear">
+                                    Geek<br>Gear
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-3 type-wrapper">
+                        <div class="type office-jungle">
+                            <div class="icon"></div>
+                            <div class="name">
+                                <a href="/type/office-jungle">
+                                    Office<br>Jungle
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-3 type-wrapper">
+                        <div class="type movies-tv-shows">
+                            <div class="icon"></div>
+                            <div class="name">
+                                <a href="/type/movies-and-tv-shows">
+                                    Movies &amp;<br>TV Shows
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-3 type-wrapper">
+                        <div class="type cooking-goodies">
+                            <div class="icon"></div>
+                            <div class="name">
+                                <a href="/type/cooking-goodies">
+                                    Cooking<br>Goodies
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="section-title">The GiftSear.ch Blog</div>
+                <div class="row blog-list">
+                    <div class="col-sm-6">
+                        <div class="article-short">
+                            <a href="/blog/6-strange-historical-events-that-shaped-christmas">
+                                <img src="images/4306ca5cd480562c6b311523bd63d538.jpg" alt="6 Strange Historical Events that Shaped Christmas ">
+                            </a>
+                            <h3>
+                                <a href="/blog/6-strange-historical-events-that-shaped-christmas">
+                                    6 Strange Historical Events that Shaped Christmas
+                                </a>
+                            </h3>
+                            <p>We think we know all there is to know about Christmas, from the birth of Jesus Christ to the rise of beloved Santa Claus thanks to Coca Cola, but many things in between (or even regarding these 2 apparently simple facts) would
+                                leave you tilting your head saying “huh”. Don’t believe it? Read on.</p>
+                            <p class="end-link">
+                                <a href="/blog/6-strange-historical-events-that-shaped-christmas">Full Article</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="article-short">
+                            <a href="/blog/actually-great-non-boring-gifts-for-grandparents">
+                                <img src="images/a9d3b639032310002e641a94c2d50630.jpg" alt="Actually Great, Non-Boring Gifts for Grandparents">
+                            </a>
+                            <h3>
+                                <a href="/blog/actually-great-non-boring-gifts-for-grandparents">
+                                    Actually Great, Non-Boring Gifts for Grandparents
+                                </a>
+                            </h3>
+                            <p>Most grandparents tend to spoil their nieces and nephews and don't ask or even accept one button from them. Well, they're special in your life so they're gonna get a gift whether they like it or not -&nbsp;and they're gonna
+                                love it! Read on for a bit of inspiration on what great gifts you can surprise them with.</p>
+                            <p class="end-link">
+                                <a href="/blog/actually-great-non-boring-gifts-for-grandparents">Full Article</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-xs-4">
+                    <p class="list-title">GiftSear.ch</p>
+                    <ul>
+                        <li>
+                            <a href="/about-us">About us</a>
+                        </li>
+                        <li>
+                            <a href="/faq">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="/terms-of-service">Terms of service</a>
+                        </li>
+                        <li>
+                            <a href="/contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-xs-4">
+                    <p class="list-title">Who to make happy?</p>
+                    <ul>
+                        <li>
+                            <a href="/search/male/partner/adult">Gifts for the boyfriend / husband</a>
+                        </li>
+                        <li>
+                            <a href="/search/female/partner/adult">Gifts for the girlfriend / wife</a>
+                        </li>
+                        <li>
+                            <a href="/search/female/family-member/adult">Gifts for mother</a>
+                        </li>
+                        <li>
+                            <a href="/search/nomatter/friend/adult">Gifts for a friend</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-xs-4">
+                    <p class="list-title">Gifts by Occasion</p>
+                    <ul>
+                        <li>
+                            <a href="/occasion/birthday">Birthday</a>
+                        </li>
+                        <li>
+                            <a href="/occasion/christmas">Christmas</a>
+                        </li>
+                        <li>
+                            <a href="/occasion/halloween">Halloween</a>
+                        </li>
+                        <li>
+                            <a href="/occasion/just-because">Just because</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-xs-12 site-details">
+                    <div class="pull-right">
+
+                        <a class="powered-by" href="https://sigurweb.com" target="_blank"><span></span></a>
+                        <p>
+                            © GiftSearch 2021. All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+
+</html>

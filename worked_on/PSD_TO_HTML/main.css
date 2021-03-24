@@ -1,0 +1,291 @@
+#profile-cover {
+    width: 100%;
+    height: 300px;
+}
+
+#profile-dp {
+    position: relative;
+    width: 190px;
+    height: 190px;
+    top: -100px;
+    padding: 5px;
+    background-color: white;
+}
+
+#profile-info {
+    margin-left: 10px;
+}
+
+#profile-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#profile-btns {
+    float: right;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-info-icons {
+    width: 14px;
+    margin-right: 3px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.right {
+    float: right;
+}
+
+#profile-followers {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#profile-followers img {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+.profile-edit-btn {
+    text-transform: capitalize;
+    background-color: white;
+    border: 0;
+    padding: 8px 24px;
+    box-shadow: 1px 2px 3px #bdbdbd;
+    float: right;
+}
+
+#profile-option-btns {
+    margin-bottom: 10px;
+}
+
+.profile-option-btn img {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.profile-option-btn:hover {
+    color: #d0d0d0;
+}
+
+.profile-option-btn {
+    margin: 0 10px;
+    white-space: nowrap;
+    align-items: center;
+    color: #d0d0d0;
+    text-decoration: none;
+}
+
+#business-detail-icon {
+    background-color: #ffc916;
+}
+
+#shop-icon {
+    background-color: #23baa6;
+}
+
+#sale-item-icon {
+    background-color: #4fa8e9;
+}
+
+#profile-data-container {
+    margin: 0 100px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+#profile-bottom h5 {
+    margin-bottom: 5px;
+}
+
+#feedback-rating-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    font-size: 8px;
+}
+
+#rating-value {
+    font-size: 70px;
+    padding: 18px 0;
+}
+
+#rating-info-container {
+    display: flex;
+}
+
+.rate-desc img {
+    height: 8px;
+    width: 150px;
+    border-radius: 2px;
+    margin-left: 10px;
+}
+
+.rate-desc {
+    font-size: 12px;
+    display: flex;
+    margin: 3px;
+    padding: 0 30px;
+    justify-content: space-between;
+}
+
+#rating-star img {
+    width: 18px;
+}
+
+#rating {
+    border-right: 1px solid #acacac;
+    padding: 0 30px;
+}
+
+#profile-bottom {
+    margin: 0 100px;
+}
+
+.rating-btns img {
+    width: 20px;
+}
+
+.rating-btns {
+    background-color: white;
+    padding: 2px 20px;
+    text-align: center;
+    height: fit-content;
+    margin: 8px;
+    line-height: 1;
+}
+
+#rating-btn-container {
+    display: flex;
+    font-size: 14px;
+}
+
+.rating-btns a {
+    color: black;
+}
+
+#feedback-container tbody {
+    background-color: white;
+}
+
+#feedback-container {
+    width: 100%;
+    font-size: 8px;
+    line-height: 2;
+}
+
+#feedback-container .flex {
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+#feedback-container td, #feedback-container th {
+    padding: 10px;
+}
+
+#feedback-dp {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#slider-dots {
+    display: flex;
+    justify-content: center;
+}
+
+.slider-dot {
+    width: 10px;
+    height: 10px;
+    margin: 2px;
+    background-size: cover;
+}
+
+#slider-dots img {
+    width: 10px;
+}
+
+#review-comments div {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#review-comments div img {
+    width: 14%;
+}
+
+.mySlides {
+    display: none;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 708px) {
+    .rate-desc {
+        font-size: 8px;
+    }
+    .slider-table {
+        display: flex;
+        flex-direction: row;
+    }
+    #profile-data-container, #profile-bottom {
+        margin: 0 25px;
+    }
+    #profile-dp {
+        margin: auto;
+    }
+    #rating-value {
+        font-size: 45px;
+    }
+    .rate-desc {
+        flex-direction: column;
+    }
+    #rating-info-container {
+        flex-direction: column;
+    }
+    #rating-desc {
+        border-right: 1px solid #acacac;
+    }
+    .rate-desc img {
+        width: 80px;
+    }
+    #rating-btn-container {
+        flex-direction: column;
+    }
+    #rating-star img {
+        width: 11px;
+    }
+    #feedback-container {
+        display: flex;
+        flex-direction: row;
+    }
+    #feedback-container th, #feedback-container td {
+        height: 80px;
+    }
+    #feedback-container tr {
+        display: flex;
+        flex-direction: column;
+    }
+    #review-comments div img {
+        width: 3%;
+    }
+    #feedback-container .flex {
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width: 1158px) {
+    #profile-data-container, #feedback-rating-container {
+        justify-content: center;
+    }
+}
