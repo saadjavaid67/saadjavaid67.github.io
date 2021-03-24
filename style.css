@@ -140,6 +140,11 @@ html {
     transform: scale(1.05);
 }
 
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
 .card h2,
 .card h4 {
     text-align: center;
