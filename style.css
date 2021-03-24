@@ -131,7 +131,8 @@ html {
     padding: 30px;
 }
 
-.card h2 {
+.card h2,
+.card h4 {
     text-align: center;
     font-family: cursive;
 }
