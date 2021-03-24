@@ -133,6 +133,11 @@ html {
 .cardsContainer .card {
     max-width: 300px;
     padding: 30px;
+    transition: 0.6s all cubic-bezier(0.81, -0.07, 0.29, 0.92);
+}
+
+.cardsContainer .card:hover {
+    transform: scale(1.05);
 }
 
 .card h2,
