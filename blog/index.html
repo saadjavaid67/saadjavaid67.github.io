@@ -5,11 +5,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
     <title>Personal Blog</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        section {
+            display: flex;
+        }
+        
+        #topics {
+            width: 23vw;
+            position: fixed;
+            background-color: #040f2e;
+            padding: 10px;
+            height: 100vh;
+            color: white;
+        }
+        
+        #topics h1 {
+            text-align: center;
+            border-radius: 30px;
+            padding: 10px;
+            background-color: #312757;
+        }
+        
+        #topics-container {
+            border-radius: 20px;
+            background-color: #312757;
+            padding: 30px;
+            overflow: auto;
+        }
+        
+        .topic {
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+            border-top: 1px solid #999999;
+            border-bottom: 1px solid #999999;
+            border-radius: 17px;
+            margin: 14px 0px;
+            cursor: pointer;
+        }
+        
+        #main {
+            margin-left: 25vw;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #main h1 {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Blog is Coming Soon!</h1>
+    <header id="header">
+        <a href="/">Home</a>
+        <a href="/blog ">Blog</a>
+        <a href="/Muhammad_Saad_Resume.pdf ">Resume</a>
+    </header>
+    <section>
+
+        <div id="topics">
+            <h1>Blogs</h1>
+            <div id="topics-container">
+
+            </div>
+        </div>
+        <div id="main">
+
+        </div>
+        <script>
+            function loadTopis() {
+                var topicContainer = document.getElementById('topics-container');
+                result = '';
+                var topics = ['Reduce Single-Use Plastic'];
+                for (let i = 0; i < topics.length; i++) {
+                    result += `<div id=` + i + ` class="topic" onclick="topicClick(id)">
+                    ` + topics[i] + `
+                </div>`;
+                }
+                topicContainer.innerHTML = result;
+            }
+
+            function topicClick(e) {
+                var main = document.getElementById('main');
+                var topicData = [` <h1>Reduce The Single-Use of Plastic</h1>
+            <p>The plastics's invasion of the planet is a reality. Just remember that the plastic waste island floating in the Pacific Ocean now measures 1.6 million km2. If we want to save the planet, the time has come for each and every one of us to take
+                ac
+            </p>
+            <img src="/images/1-1.jpg" alt="">
+            <p>Plastic has become a constant element in our lives. It's everywhere: product packaging, cosmetic ingredients, textiles, mobile phones, etc. It's even in the chewing gum you might be chewing on right now! Its omnipresence is such that many
+                would find the mere fact of giving it up a difficult task. Reducing the consumption of plastics therefore requires not only a change in habits, but also a change of mindset. PLASTICS, A GLOBAL PROBLEM The fact that plastics are now a serious
+                headache for the planet is proved by the fact that more and more governments are proposing measures to reduce their impact on the environment. In fact, in 2021 Europe will ban the sale of single-use plastics such as drinking straws, cutlery
+                or cotton buds within its borders. To put the magnitude of the problem into context, let's review some objective data:
+
+                <ul>
+                    <li>Every year, 500 billion plastic bottles are produced worldwide.</li>
+                    <li>In 2020 we will generate more than 500 million tonnes of plastic, 900% more than in 1980.</li>
+                    <li>Plastic in the ocean is already more than 150 million tons of waste.</li>
+                    <li>By 2050, they could contain more plastics than fish.</li>
+                    <li>Each year around eight million tons of plastic ends up in our seas and oceans.</li>
+                </ul>
+                While on the subject of single-use plastics, which account for half of the plastic we use each year, they have an average useful life of 12 to 15 minutes and yet can take up to 500 years to disappear, according to Life Out Of Plastic (LOOP). Plastics
+                outlive us and will outlive our children. The good news is that it is in our hands, as consumers, to turn this situation around. We have the power to make manufacturers change the way they produce. How? By changing the way we consume.
+            </p>`];
+                main.innerHTML = topicData[e]
+            }
+            loadTopis();
+            topicClick(0);
+        </script>
+    </section>
 </body>
 
 </html>
