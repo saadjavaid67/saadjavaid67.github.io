@@ -57,6 +57,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 100%;
         }
         
         #main h1 {
@@ -66,6 +67,11 @@
         header {
             position: sticky;
             top: 0;
+        }
+        
+        #main p {
+            font-size: 18px;
+            letter-spacing: 0.5px
         }
     </style>
 </head>
@@ -85,13 +91,12 @@
             </div>
         </div>
         <div id="main">
-
         </div>
         <script>
             function loadTopis() {
                 var topicContainer = document.getElementById('topics-container');
                 result = '';
-                var topics = ['Reduce Single-Use Plastic'];
+                var topics = ['Reduce Single-Use Plastic', 'Experiences in Hacker Community'];
                 for (let i = 0; i < topics.length; i++) {
                     result += `<div id=` + i + ` class="topic" onclick="topicClick(id)">
                     ` + topics[i] + `
@@ -121,7 +126,16 @@
                 </ul>
                 While on the subject of single-use plastics, which account for half of the plastic we use each year, they have an average useful life of 12 to 15 minutes and yet can take up to 500 years to disappear, according to Life Out Of Plastic (LOOP). Plastics
                 outlive us and will outlive our children. The good news is that it is in our hands, as consumers, to turn this situation around. We have the power to make manufacturers change the way they produce. How? By changing the way we consume.
-            </p>`];
+            </p>`, ` <h1>Hackers</h1>
+            <p>To day i'm gonna share my experiences in hackers community. First of all i want to tell you that hacker don't means to play with someones personal data or doing security cracks. Hacker is a term that refers that a person who is experienced
+                in any kind of skill. Before joining MLH i wasn't aware of this but as i joined i started exploring alot of things that i never thought. So let me tell you guys something about MLH</p>
+            <h1>Major League Hacking</h1>
+            <img src="images/2-1.jpg" alt="">
+            <p>MLH stands for Major League Hacking. It is a community by some experienced hackers and they connect hackers to new commers and make us learn something new in a very short period of time.</p>
+            <h1>My Personal Experience</h1>
+            <p>Becoming a part of this Hackathon change my perspective entirly. I started thinking broad and now i am able to communicate with peaple expertly. And now i am aware that how to live in a Community and how to collaborate. I learnt alot of skills
+                from different experienced people and also teached some people the skills i had. This is my first experience and I'm am in <b> Top 10 people</b> in the world. I am very happy to such an oppertunity. I hope that i will sustain my position.</p>
+       `];
                 main.innerHTML = topicData[e]
             }
             loadTopis();
